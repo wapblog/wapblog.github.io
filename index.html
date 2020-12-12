@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Блогъ. У кого чего болит, тот о том и говорит...</title>
+<link href="/favicon.ico" rel="icon">
+<meta  charset="utf-8">
+<link rel="stylesheet" type="text/css" href="/sis/style.css">
+</head>
+
+<body>
+
+<header>
+<div class="header">
+<a href="/"><img src="/img/logo.png" alt="Блогъ"></a>
+</div>
+</header>
+
+<main>
+<div>
+
+<h1>wapъ</h1>
+
+<div class="news">
+<img src="/star.svg" alt="+"> 
+Сей час Рождественский Постъ!<br>
+<a style="margin-left:30px" href="Post.mp4">Постъ.mp4</a> и <a href="Post.gif">Постъ.gif</a><br>
+<!--<img src="/img/news.svg" alt="+"> + <a style="background:#328b67; padding:0px 3px;  color:#ece2d9" href="/str/warning/">Важно про окончание Поста!</a>-->
+</div>
+
+<div class="div">
+<img src="/img/online.svg" alt="+"> 
+<a href="/online/">Онлайнъ</a>
+</div>
+
+<div class="div">
+<img src="/img/blog.svg" alt="+"> 
+<a href="/blog/">Блогъ</a>
+
+<div class="min" style="margin-top:5px">
+<img src="/img/link.svg" alt="+"> <a href="/blog/iproepidemii/">эпидемии тоже</a><br>
+<img src="/img/link.svg" alt="+"> <a href="/blog/iproepidemii-video/">поведение при эпидемии</a><br>
+<img src="/img/link.svg" alt="+"> <a href="/blog/kakie-takie-hristiane/">общие Христиане</a><br>
+<img src="/img/link.svg" alt="+"> <a href="/blog/antihristianstvo/">антиХристианство</a><br>
+<img src="/img/link.svg" alt="+"> <a href="/blog/oderzhimosti/">одержимости</a><br>
+<img src="/img/link.svg" alt="+"> <a href="/blog/iskazhenie-pisanii/">искажение Библии</a><br>
+<img src="/img/link.svg" alt="+"> <a href="/blog/o-pyatoi-zapovedi/">пятая Заповедь</a><br>
+</div>
+
+</div>
+
+<div class="div">
+<img src="/img/stena.svg" alt="+"> 
+<small><a href="/guest/">Стена</a>
+<small>
+<?php 
+$filename = './guest/log.html';
+if (file_exists($filename)) {
+  echo "" . date ("d M Y в H:i", filemtime($filename));
+ }
+?>
+</small>
+</small>
+</div>
+
+</div>
+</main>
+
+<footer>
+<div class="foot">
+<img src="/img/copyleft.svg" alt="+"> 
+<a href="/str/copyleft/">CopyLeftъ</a>
+</div>
+</footer>
+
+<a href="//li.ru/stat/blog.org.ru/" target="_blank">
+<img src="//counter.yadro.ru/hit?t25.4;r" alt="+"></a>
+
+</body>
+</html>
